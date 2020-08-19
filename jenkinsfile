@@ -1,0 +1,18 @@
+node ('Dev') {
+    
+    stage('SCM Checkout')
+	{
+	
+  echo 'Waiting 1 minutes for deployment to complete prior starting smoke testing'
+  sleep 60 // seconds
+}
+    
+   stage('Build') {
+       echo "Success, waiting  for approval"
+    }
+    
+    stage('Final')
+    {
+        echo "Hello done"
+    }
+}
