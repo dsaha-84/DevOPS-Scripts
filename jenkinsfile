@@ -1,6 +1,6 @@
 node ('Dev') {
     
-    stage('SCM Checkout')
+    stage('Dowload Artifacts from S3')
 	{
 	
   echo 'Waiting 1 minutes for deployment to complete prior starting smoke testing'
